@@ -1,0 +1,15 @@
+<html>
+<head>
+    <link rel = stylesheet type = 'text/css' href = "{{url_for('static', filename='styles.css')}}"
+</head>
+<body>
+<p>Name : {{item.name}}</p>
+
+<p>Course: {{item.course}}</p>
+
+<p>Description: {{item.description}}</p>
+
+<p>Price: {{item.price}} </p>
+<a href = '{{url_for('restaurantMenu', restaurant_id = restaurant_id)}}'> Back</a>
+</body>
+</html>
